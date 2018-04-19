@@ -7,13 +7,13 @@ Package.describe({
 
 // Server-side push deps
 Npm.depends({
-  'apn' : '1.6.2', // '1.7.4', // working: 1.6.2
-  'node-gcm' : '0.14.4', // previously: 0.9.6
+  'apn' : '2.2.0', // previously: 1.6.2
+  'node-gcm' : '0.14.10', // previously: 0.14.10
 });
 
 Cordova.depends({
-  'phonegap-plugin-push': '1.8.4', // previously 1.6.4
-  'cordova-plugin-device': '1.1.3', // previously 1.1.1
+  'phonegap-plugin-push': '2.1.3', // previously 1.8.4
+  'cordova-plugin-device': '2.0.2', // previously 1.1.3
 });
 
 Package.registerBuildPlugin({
@@ -30,7 +30,7 @@ Package.registerBuildPlugin({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.2');
+  api.versionsFrom('1.6'); // Previously 1.2.  Updated due to cordova updates
   api.use(['ecmascript']);
 
 
