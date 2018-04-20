@@ -1,6 +1,6 @@
 Package.describe({
   name: 'raix:push',
-  version: '0.0.0-semantic-release',
+  version: '4.0.0-alpha.1',
   summary: 'Isomorphic Push notifications for APN and GCM',
   git: 'https://github.com/raix/push.git'
 });
@@ -8,7 +8,7 @@ Package.describe({
 // Server-side push deps
 Npm.depends({
   'apn' : '1.6.2', // previously: 1.6.2
-  'node-gcm' : '0.14.10', // previously: 0.14.10
+  'node-gcm' : '0.14.4', // previously: 0.14.4
 });
 
 Cordova.depends({
